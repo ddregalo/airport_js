@@ -13,4 +13,10 @@ describe("Dave's Airport", function() {
     expect(airport.landed()).toContain('Dave');
   });
 
+  it("checks that the plane is no longer in the hanger after taking off", function(){
+    airport.land('Dave');
+    airport.takeoff('Dave');
+    expect(airport.landed()).toEqual([]);
+  });
+
 });

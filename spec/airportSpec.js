@@ -1,4 +1,4 @@
-describe('Airport', function() {
+  describe('Airport', function() {
 
   var airport;
 
@@ -9,5 +9,4 @@ describe('Airport', function() {
   it('creates an empty airport', function() {
     expect(airport.landed()).toEqual([]);
   });
-
 });
