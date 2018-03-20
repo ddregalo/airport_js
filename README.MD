@@ -1,6 +1,6 @@
-*Dave's Airport Challenge*
+**Dave's Airport Challenge**
 
-Collaborators: Chris Ly**
+Collaborators: Chris Ly
 Date Started: 20 March 2018
 Javascript with Jasmine testing
 
