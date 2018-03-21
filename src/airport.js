@@ -6,8 +6,8 @@ Airport.prototype.landed = function() {
   return this.hangar;
 };
 
-Airport.prototype.land = function(plane) {
-  this.hangar.push(plane);
+Airport.prototype._clearToLand = function(plane) {
+  return true
 };
 
 Airport.prototype.takeoff = function(plane) {
