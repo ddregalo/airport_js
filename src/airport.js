@@ -20,8 +20,9 @@ Airport.prototype._clearToLand = function(plane) {
 Airport.prototype._clearToTakeoff = function(plane) {
   var weather = new Weather();
   if (weather.isStormy() == true) {
-    throw "Weather is too stormy to takeoff";
+    alert("Weather is too stormy to takeoff");
   } else {
+    plane.planeAction = "takeoff"
     return true
   };
   // var index = this.hangar.indexOf(plane);

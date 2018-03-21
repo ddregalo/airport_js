@@ -15,7 +15,7 @@ describe('Airport', function() {
 
   describe('landed', function(){
     it('returns the array of planes in hangar', function(){
-
+      expect(airport.hangar).toEqual([]);
     });
   });
 
@@ -36,7 +36,14 @@ describe('Airport', function() {
   describe('_clearToTakeoff', function() {
     it('returns true for plane to takeoff', function() {
       spyOn(Math, "random").and.returnValue(0.3);
-      expect(airport._clearToTakeoff(plane)).toEqual(true)
+      expect(airport._clearToTakeoff(plane)).toEqual(true);
+    });
+
+    it('alert if weather is too stotmy to takeoff', function() {
+      spyOn(Math, "random").and.returnValue(0.9);
+      spyOn(window, 'alert');
+      airport._clearToTakeoff(plane);
+      expect(window.alert).toHaveBeenCalledWith("Weather is too stormy to takeoff");
     });
   });
 });
