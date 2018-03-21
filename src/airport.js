@@ -17,9 +17,9 @@ Airport.prototype._clearToLand = function(plane) {
   };
 };
 
-Airport.prototype.takeoff = function(plane) {
+Airport.prototype._clearToTakeoff = function(plane) {
   var weather = new Weather();
-  if (weather.isStormy() === true) {
+  if (weather.isStormy() == true) {
     throw "Weather is too stormy to takeoff";
   } else {
     return true
