@@ -6,8 +6,11 @@ describe('', function() {
     plane = new Plane('Dave');
   });
 
-  it('checks a new plane is a plane', function() {
+  it('checks a new plane has a name property', function() {
     expect(plane.name).toEqual('Dave');
   });
 
+  it('checks a new plane has a planeAction property', function() {
+    expect(plane.planeAction).toEqual("");
+  });
 });
