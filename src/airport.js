@@ -12,6 +12,7 @@ Airport.prototype._clearToLand = function(plane) {
   if (weather.isStormy() == true) {
     alert("Weather is too stormy to land");
   } else {
+    plane.planeAction = "land"
     return true
   };
 };
