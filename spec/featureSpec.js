@@ -1,4 +1,4 @@
-describe("Dave's Airport", function() {
+describe("Dave's Airport Feature", function() {
 
   var airport;
   var plane;
@@ -21,11 +21,4 @@ describe("Dave's Airport", function() {
     airport._clearToTakeoff(plane);
     expect(plane.planeAction).toEqual('takeoff');
   });
-  //
-  // it("checks that the plane is no longer in the hanger after taking off", function(){
-  //   airport.land('Dave');
-  //   airport.takeoff('Dave');
-  //   expect(airport.landed()).toEqual([]);
-  // });
-
 });

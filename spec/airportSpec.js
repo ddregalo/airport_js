@@ -47,7 +47,3 @@ describe('Airport', function() {
     });
   });
 });
-
-
-// var outerSpace = diamond.outerSpace.bind(diamond, 'D', 'C');
-//     expect(outerSpace).toThrow('Invalid combination of arguments');

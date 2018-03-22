@@ -25,6 +25,4 @@ Airport.prototype._clearToTakeoff = function(plane) {
     plane.planeAction = "takeoff"
     return true
   };
-  // var index = this.hangar.indexOf(plane);
-  // this.hangar.splice(index, 1)
 };
